@@ -22,7 +22,7 @@ interface Project {
 const PROFILE: Profile = {
   name: "Claudia Dolhan",
   title: "Full Stack Developer",
-  subtitle: "React · Node.js · PostgreSQL",
+  subtitle: "React · TypeScript · Node.js · PostgreSQL",
   intro:
     "Software Developer passionate about building modern, scalable web applications. Experienced in full-stack development across frontend, backend, and databases, with a strong focus on clean architecture, maintainable code, and user-centered design.",
   photo: "/image_portofoliu.png",

@@ -49,13 +49,20 @@ const ABOUT: AboutData = {
       title: "Frontend Developer (Project)",
       company: "SmartLink — Medical Dashboard",
       years: "2024 — Prezent",
-      desc: "Dashboard medical cu React, MUI, Node.js și Azure SQL. Vizualizare date pacienți în timp real și sistem de alarme.",
+      desc: "Medical Dashboard built with React, MUI, Node.js și Azure SQL. Real-time patient data visualization and alert system",
     },
     {
       title: "Full Stack Developer",
       company: "Blog Magazine Platform",
-      years: "2024",
-      desc: "Platformă blog cu Vite + TypeScript, server Node.js HTTP și PostgreSQL.",
+      years: "2025",
+      desc: "Blog Magazine built with Vite + TypeScript, server Node.js HTTP și PostgreSQL.",
+    },
+
+    {
+      title: "Full Stack Developer",
+      company: "Online Coffee Shop",
+      years: "2026",
+      desc: "A  a full-featured coffee shop website built with React, TypeScript, and Vite, featuring a dynamic product menu, shopping cart, and checkout flow. It uses React Router for navigation, Context API for cart state management, and custom CSS styling based on a Figma design.",
     },
   ],
   cvFile: "/cv.pdf",
