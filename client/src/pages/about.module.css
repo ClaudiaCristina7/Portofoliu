@@ -1,0 +1,263 @@
+.page {
+  min-height: 100vh;
+}
+
+.banner {
+  background: linear-gradient(135deg, #111 60%, #1a1500);
+  border-bottom: 3px solid var(--gold);
+  min-height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+.banner::before {
+  content: "ABOUT";
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 180px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.02);
+  letter-spacing: -0.05em;
+  pointer-events: none;
+}
+
+.bannerContent {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.backBtn {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 600;
+  transition: color 0.2s;
+  align-self: flex-start;
+}
+.backBtn:hover {
+  color: var(--gold);
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+.bannerTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0 24px;
+  }
+  .bannerContent {
+    padding: 32px 24px;
+  }
+}
+
+.intro {
+  padding: 80px 0;
+  border-bottom: 1px solid #222;
+}
+.introGrid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 60px;
+  align-items: start;
+}
+@media (max-width: 800px) {
+  .introGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.introName {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+.introRole {
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.introText {
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-size: 15px;
+  margin-bottom: 36px;
+}
+
+.cvBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--gold);
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 24px;
+  border-radius: 50px;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+  margin-bottom: 12px;
+}
+.cvBtn:hover {
+  background: var(--gold-dark);
+  transform: translateY(-2px);
+}
+
+.cvArrow {
+  width: 28px;
+  height: 28px;
+  background: #111;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 14px;
+}
+
+.cvNote {
+  font-size: 12px;
+  color: #555;
+}
+.cvNote code {
+  background: #222;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--gold);
+}
+
+.statsBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: #2a2a2a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.stat {
+  background: var(--bg2);
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+.statNum {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+}
+.statLabel {
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.section {
+  padding: 80px 0;
+  border-bottom: 1px solid #222;
+}
+.sectionTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(24px, 2.5vw, 36px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 48px;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 60px;
+}
+@media (max-width: 700px) {
+  .skillsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.timeline {
+  border-left: 2px solid #2a2a2a;
+  padding-left: 32px;
+  margin-left: 12px;
+}
+.timelineItem {
+  position: relative;
+  padding-bottom: 40px;
+}
+.timelineItem:last-child {
+  padding-bottom: 0;
+}
+.timelineDot {
+  position: absolute;
+  left: -40px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background: var(--gold);
+  border-radius: 50%;
+  border: 3px solid var(--bg);
+}
+.timelineYear {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 6px;
+}
+.timelineDegree {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.timelineSchool {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.timelineDesc {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.7;
+}
+
+.footer {
+  text-align: center;
+  padding: 32px;
+  color: var(--text-muted);
+  font-size: 13px;
+}

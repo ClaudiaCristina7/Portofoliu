@@ -1,0 +1,435 @@
+.page {
+  min-height: 100vh;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 3fr 6fr;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.heroPhoto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
+  background: var(--bg);
+}
+
+.photoWrapper {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+}
+
+.photoWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  border-radius: 4px;
+}
+
+.heroPhoto img {
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  border-radius: 4px;
+}
+.barBottom {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 104.2%;
+  height: 25px;
+  background: var(--gold);
+}
+
+/* Bara sus-stanga - un sfert din poza */
+.photoWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -22px;
+  width: 25px;
+  height: 103.2%;
+  background: var(--gold);
+}
+
+/* Bara jos-dreapta - trei sferturi din poza */
+.photoWrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -22px;
+  width: 25px;
+  height: 30%;
+  background: var(--gold);
+}
+
+.photoCorner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background: var(--gold);
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+  z-index: 2;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 80px 80px 60px;
+}
+.photoCorner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background: var(--gold);
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+  z-index: 1;
+}
+
+.cornerBottomRight {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  width: 18px;
+  height: 50%;
+  background: var(--gold);
+  z-index: 3;
+}
+
+.photoPlaceholder {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--text-muted);
+  font-size: 13px;
+  text-align: center;
+  padding: 24px;
+}
+.photoPlaceholder span {
+  font-size: 64px;
+}
+.photoPlaceholder code {
+  background: #333;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--gold);
+  font-size: 12px;
+}
+
+.heroIntro {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 4px;
+}
+.dash {
+  color: var(--gold);
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.heroName {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(24px, 2.8vw, 40px);
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.heroTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(30px, 3.5vw, 52px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  margin-bottom: 8px;
+}
+
+.heroSubtitle {
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.heroText {
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 460px;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: transparent;
+  border: 2px solid var(--gold);
+  color: var(--text);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 20px 14px 28px;
+  border-radius: 50px;
+  transition: background 0.25s;
+  align-self: flex-start;
+}
+.ctaBtn:hover {
+  background: rgba(245, 166, 35, 0.1);
+}
+
+.ctaArrow {
+  width: 36px;
+  height: 36px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  font-size: 18px;
+}
+
+.section {
+  padding: 100px 0;
+  border-top: 1px solid #222;
+}
+.sectionInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.sectionTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 56px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .heroPhoto {
+    min-height: 50vh;
+  }
+  .heroContent {
+    padding: 40px 24px;
+  }
+  .sectionInner {
+    padding: 0 24px;
+  }
+}
+
+.card {
+  background: var(--bg2);
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 32px 28px;
+  transition:
+    border-color 0.25s,
+    transform 0.25s;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+.cardNum {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #2a2a2a;
+  line-height: 1;
+}
+.cardTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.cardDesc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.tag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 3px 10px;
+  background: rgba(245, 166, 35, 0.1);
+  border: 1px solid rgba(245, 166, 35, 0.3);
+  border-radius: 20px;
+  color: var(--gold);
+}
+
+.cardLink {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gold);
+  transition: letter-spacing 0.2s;
+}
+.cardLink:hover {
+  letter-spacing: 0.08em;
+}
+
+.contactWrap {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+}
+@media (max-width: 800px) {
+  .contactWrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contactText {
+  color: var(--text-muted);
+  line-height: 1.75;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.contactDetail {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.contactDetail a {
+  color: var(--gold);
+}
+.contactDetail a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  padding: 32px;
+  color: var(--text-muted);
+  font-size: 13px;
+  border-top: 1px solid #222;
+}
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.modal {
+  background: var(--bg2);
+  border: 1px solid var(--gold);
+  border-radius: 16px;
+  padding: 48px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.modalClose {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 20px;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.modalClose:hover {
+  color: var(--gold);
+}
+
+.modalTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+
+.modalDesc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+.readMore {
+  display: inline;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold);
+  text-decoration: underline;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.readMore:hover {
+  opacity: 0.7;
+}
