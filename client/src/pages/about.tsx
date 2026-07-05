@@ -47,7 +47,7 @@ const ABOUT: AboutData = {
   experience: [
     {
       title: "Frontend Developer (Project)",
-      company: "SmartLink — Medical Dashboard",
+      company: "Medical Dashboard",
       years: "2024",
       desc: "Medical Dashboard built with React, MUI, Node.js și Azure SQL. Real-time patient data visualization and alert system",
     },
