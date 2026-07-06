@@ -33,10 +33,10 @@ const PROJECTS: Project[] = [
     title: "Health Track & Monitor",
     desc: "A medical monitoring dashboard designed for doctors to track patient data in real time. Built with React and Material UI for a clean, responsive interface, connected to a Node.js + Express backend and an Azure SQL database. Features include a sidebar layout, patient table, alarm management system, and a doctor profile page. The app uses React Router for navigation between multiple pages. Focused on usability and Nielsen's 10 heuristics for medical-grade UX. Deployed with a RESTful API architecture for scalable data handling.",
     tags: ["React", "Node.js", "Express", "Azure SQL", "MUI", "React Router"],
-    link: "smart-link-wine.vercel.app",
+    link: "https://smart-link-wine.vercel.app/",
   },
   {
-    title: "Blog Magazine",
+    title: "Travel Blog Magazine",
     desc: "A full-stack blog and magazine platform featuring a dynamic card system powered by PostgreSQL. The frontend uses Vite + TypeScript with reusable components and React Router for seamless navigation. The backend is a pure Node.js HTTP server without Express, handling API requests and contact form submissions. Country data is fetched from an external API using useEffect. Styled with CSS Modules for scoped, maintainable design.",
     tags: [
       "React",
@@ -68,7 +68,7 @@ const PROJECTS: Project[] = [
       "PostgreSQL",
       "Postman",
     ],
-    link: "#",
+    link: "https://coffee-shopro.vercel.app",
   },
 ];
 
