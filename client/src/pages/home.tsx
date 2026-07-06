@@ -130,7 +130,12 @@ export default function Home(): React.ReactElement {
                     </span>
                   ))}
                 </div>
-                <a href={p.link} className={styles.cardLink}>
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.cardLink}
+                >
                   View Project →
                 </a>
               </div>
