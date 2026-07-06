@@ -47,7 +47,7 @@ const PROJECTS: Project[] = [
       "CSS Modules",
       "React Router",
     ],
-    link: "https://claudia-portfoliosite.vercel.app",
+    link: "https://blog-claudia10.vercel.app",
   },
   {
     title: "AI Across Industries",
