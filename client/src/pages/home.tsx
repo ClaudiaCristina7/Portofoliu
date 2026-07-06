@@ -33,7 +33,7 @@ const PROJECTS: Project[] = [
     title: "Health Track & Monitor",
     desc: "A medical monitoring dashboard designed for doctors to track patient data in real time. Built with React and Material UI for a clean, responsive interface, connected to a Node.js + Express backend and an Azure SQL database. Features include a sidebar layout, patient table, alarm management system, and a doctor profile page. The app uses React Router for navigation between multiple pages. Focused on usability and Nielsen's 10 heuristics for medical-grade UX. Deployed with a RESTful API architecture for scalable data handling.",
     tags: ["React", "Node.js", "Express", "Azure SQL", "MUI", "React Router"],
-    link: "#",
+    link: "smart-link-wine.vercel.app",
   },
   {
     title: "Blog Magazine",
