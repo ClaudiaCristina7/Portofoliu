@@ -53,7 +53,7 @@ const PROJECTS: Project[] = [
     title: "AI Across Industries",
     desc: "An informational website exploring the use of Artificial Intelligence across various real-world domains such as healthcare, education, finance, and entertainment. Built with React + Vite for fast performance and smooth navigation between topic sections. Styled entirely with custom CSS, focusing on clean layout and readability. The project highlights how AI technologies are transforming industries and everyday life. Designed as a research and presentation tool with structured content sections. A frontend-only project focused on UI design and content organization.",
     tags: ["React", "Vite", "CSS"],
-    link: "https://ai-website-pqsgl7g38-claudia10.vercel.app/",
+    link: "https://ai-website-claudia10.vercel.app",
   },
 
   {
